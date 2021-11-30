@@ -60,7 +60,7 @@
     <section class="jumbotron text-center">
         <img src="img/Lambang_Kementerian_Lingkungan_Hidup_dan_Kehutanan.png" alt="KMLHK" width="200" class="rounded-circle img-thumbnail" img-thumbnail />
         <h1 class="display-4">KLHK | BP2SDM</h1>
-        <p class="lead">Kementerian Lingkungan Hidup dan Kehutanan</p>
+        <p class="lead"></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -310,20 +310,24 @@
         });
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
+
     <script>
-        gsap.form(".jumbotron img", {
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.lead', {duration: 2, delay: 1.5 text: 'Kementerian Lingkungan Hidup dan Kehutanan'});
+        gsap.form('.jumbotron img', {
             duration: 1,
             rotateY: 360,
             opacity: 0,
         });
-        gsap.form(".navbar", {
+        gsap.form('.navbar', {
             duration: 1.5,
             y: '-100%',
             opacity: 0,
             ease: 'bounce'
         });
-        gsap.form(".display-4", {
+        gsap.form('.display-4', {
             duration: 1,
             x: -50,
             opacity: 0,

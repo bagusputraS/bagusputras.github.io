@@ -1,20 +1,20 @@
 .jumbotron {
-    padding-top: 5rem;
-    background-color: #e2edff;
+  padding-top: 5rem;
+  background-color: #e2edff;
 }
 
 #projects {
-    background-color: #e2edff;
+  background-color: #e2edff;
 }
 
 section {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .gallery-img {
-    width: 100%;
+  width: 100%;
 }
 
-#gallery .row>* {
-    padding: 0;
+#gallery .row > * {
+  padding: 0;
 }
